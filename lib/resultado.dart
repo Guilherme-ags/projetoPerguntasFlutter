@@ -26,16 +26,16 @@ class Resultado extends StatelessWidget {
         Center(
           child: Text(
             fraseResultado,
-            style: TextStyle(fontSize: 28),
+            style: const TextStyle(fontSize: 28),
           ),
         ),
         TextButton(
             onPressed: quandorReiniciarQuestionario,
-            child: Text(
+            style: TextButton.styleFrom(foregroundColor: Colors.blue),
+            child: const Text(
               'Reiniciar?',
               style: TextStyle(fontSize: 18),
-            ),
-            style: TextButton.styleFrom(foregroundColor: Colors.blue))
+            ))
       ],
     );
   }

@@ -30,9 +30,9 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       'texto': 'Qual o seu instrutor favorito?',
       'respostas': [
-        {'texto': 'Maria', 'pontuacao': 10},
-        {'texto': 'João', 'pontuacao': 5},
-        {'texto': 'Leo', 'pontuacao': 3},
+        {'texto': 'Leo', 'pontuacao': 10},
+        {'texto': 'Maria', 'pontuacao': 5},
+        {'texto': 'João', 'pontuacao': 3},
         {'texto': 'Pedro', 'pontuacao': 1},
       ],
     }
@@ -63,7 +63,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: Text("Perguntas"),
+        title: const Text("Perguntas"),
       ),
       body: temPerguntaSelecionada
           ? Questionario(
